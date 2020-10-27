@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F6F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="@string/声音"
+            app:srcCompat="@drawable/shengyin" />
+
+        <EditText
+            android:id="@+id/msgText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:autofillHints=""
+            android:background="@drawable/bg"
+            android:hint="@string/输入框"
+            android:inputType="textMultiLine|textPersonName"
+            android:padding="5dp"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/weixiao"
+            app:srcCompat="@drawable/weixiao" />
+
+        <ImageView
+            android:id="@+id/msgSend"
+            android:layout_width="75dp"
+            android:layout_height="37dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/button"
+            app:srcCompat="@drawable/pp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
