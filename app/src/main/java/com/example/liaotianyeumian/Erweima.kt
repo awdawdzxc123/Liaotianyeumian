@@ -7,35 +7,21 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
-import kotlinx.android.synthetic.main.activity_find.*
+import kotlinx.android.synthetic.main.activity_erweima.*
 
-import kotlinx.android.synthetic.main.activity_weixin.imageView15
-
-class find : AppCompatActivity() {
+class Erweima : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_find)
+        setContentView(R.layout.activity_erweima)
         supportActionBar?.hide()//标题弃掉
 
-        fullScreen(this)
-        window.decorView.systemUiVisibility =
-            View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN or View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
-        sousu.setOnClickListener {
-            val intent = Intent(this,com.example.liaotianyeumian.Wechat_Moments::class.java)
-            startActivity(intent)
-        }
-        imageView13.setOnClickListener {
-            val intent = Intent(this, WeinxinActivity::class.java)
-            startActivity(intent)
-        }
-        imageView15.setOnClickListener {
+        fanhui.setOnClickListener {
             val intent = Intent(this,my::class.java)
             startActivity(intent)
         }
-        imageView12.setOnClickListener {
-            val intent = Intent(this,Tongxilu::class.java)
-            startActivity(intent)
-        }
+        fullScreen(this)
+        window.decorView.systemUiVisibility =
+            View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN or View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
     }
     /**
      * 通过设置全屏，设置状态栏透明

@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Wallet"/>
+        <activity android:name=".Erweima"/>
+        <activity android:name=".Wallet" />
         <activity android:name=".Clickthe_chatpage" />
         <activity android:name=".Tongxilu" />
         <activity android:name=".Denglumima" />
@@ -17,14 +18,15 @@
         <activity android:name=".find" />
         <activity android:name=".my" />
         <activity android:name=".MainActivity" />
-        <activity android:name="com.example.ninepatchdemo.LoginActivity">
+        <activity android:name=".WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.android_weixin.WeinxinActivity" />
+        <activity android:name="com.example.ninepatchdemo.LoginActivity"></activity>
+        <activity android:name=".WeinxinActivity" />
     </application>
 
 </manifest>

@@ -1,11 +1,14 @@
 package com.example.liaotianyeumian
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import jp.wasabeef.recyclerview.adapters.AlphaInAnimationAdapter
 import jp.wasabeef.recyclerview.adapters.ScaleInAnimationAdapter
+import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.mas_shang.*
 import kotlinx.android.synthetic.main.mas_xia.*
 
 class MainActivity : AppCompatActivity() {
@@ -17,7 +20,10 @@ class MainActivity : AppCompatActivity() {
 
         supportActionBar?.hide()//标题弃掉
         initMsg()
-
+        fanhui.setOnClickListener {
+            val intent = Intent(this,WeinxinActivity::class.java)
+            startActivity(intent)
+        }
         if (!::adapter.isInitialized) {
             adapter = MsgAdapter(msgDataList)
         }
@@ -64,62 +70,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initMsg() {
-        repeat(2)
+        repeat(1)
         {
             msgDataList.add(
                 Msg(
-                    "两个include的高度拉不动1111111111111111111111111122222222222222222222222222222222222",
+                    "今晚出去吃饭!",
                     0,
                     R.drawable.img_1
-                )
-            )
-            msgDataList.add(
-                Msg(
-                    "一直是占满界面",
-                    0,
-                    R.drawable.img_1
-                )
-            )
-            msgDataList.add(
-                Msg(
-                    "直接在界面用控件试试",
-                    1,
-                    R.drawable.img_5
-                )
-            )
-            msgDataList.add(
-                Msg(
-                    "可以拖了",
-                    0,
-                    R.drawable.img_1
-                )
-            )
-            msgDataList.add(
-                Msg(
-                    "啥也没搞，突然又能拖动了。。",
-                    0,
-                    R.drawable.img_4
-                )
-            )
-            msgDataList.add(
-                Msg(
-                    "让人怪不好意思的",
-                    0,
-                    R.drawable.img_7
-                )
-            )
-            msgDataList.add(
-                Msg(
-                    "为啥一点打字会吃掉一点",
-                    0,
-                    R.drawable.img_6
-                )
-            )
-            msgDataList.add(
-                Msg(
-                    "测试看看 下面的区域如果是一个整体，设置一点的Top内边距",
-                    1,
-                    R.drawable.img_5
                 )
             )
         }

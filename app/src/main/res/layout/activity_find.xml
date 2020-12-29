@@ -7,162 +7,132 @@
     android:background="#E4E4E4"
     tools:context=".find">
 
-    <Button
-        android:id="@+id/Wechat_Moments"
+    <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:background="#FBFBFB"
-        android:drawableStart="@drawable/ic_pyq"
-        android:drawableEnd="@drawable/ic_dahao"
-        android:gravity="center_vertical"
-        android:paddingLeft="20dp"
-        android:text="    朋友圈"
-        app:layout_constraintEnd_toEndOf="@+id/button8"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/button8"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
-
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="#FBFBFB"
-        android:drawableStart="@drawable/ic_sph"
-        android:drawableEnd="@drawable/ic_dahao"
-        android:gravity="center_vertical"
-        android:paddingLeft="20dp"
-        android:text="    视频号"
-        app:layout_constraintEnd_toEndOf="@+id/button2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/Wechat_Moments" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="#FBFBFB"
-        android:drawableStart="@drawable/ic_sys"
-        android:drawableEnd="@drawable/ic_dahao"
-        android:gravity="center_vertical"
-        android:paddingLeft="20dp"
-        android:text="    扫一扫"
-        app:layout_constraintEnd_toEndOf="@+id/button9"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/button9"
-        app:layout_constraintTop_toBottomOf="@+id/button8" />
-
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="#FBFBFB"
-        android:drawableStart="@drawable/ic_yaoyiyao"
-        android:drawableEnd="@drawable/ic_dahao"
-        android:gravity="center_vertical"
-        android:paddingLeft="20dp"
-        android:text="    摇一摇"
-        app:layout_constraintEnd_toEndOf="@+id/button3"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/button3"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="#FBFBFB"
-        android:drawableStart="@drawable/ic_kyk"
-        android:drawableEnd="@drawable/ic_dahao"
-        android:gravity="center_vertical"
-        android:paddingLeft="20dp"
-        android:text="    看一看"
-        app:layout_constraintEnd_toEndOf="@+id/button10"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/button10"
-        app:layout_constraintTop_toBottomOf="@+id/button9" />
-
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="#FBFBFB"
-        android:drawableStart="@drawable/ic_souyisou"
-        android:drawableEnd="@drawable/ic_dahao"
-        android:gravity="center_vertical"
-        android:paddingLeft="20dp"
-        android:text="    搜一搜"
-        app:layout_constraintEnd_toEndOf="@+id/button4"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/button4"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="#FBFBFB"
-        android:drawableStart="@drawable/ic_fjr"
-        android:drawableEnd="@drawable/ic_dahao"
-        android:gravity="center_vertical"
-        android:paddingLeft="20dp"
-        android:text="    表情"
-        app:layout_constraintEnd_toEndOf="@+id/button11"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/button11"
-        app:layout_constraintTop_toBottomOf="@+id/button10" />
-
-    <Button
-        android:id="@+id/button11"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="#FBFBFB"
-        android:drawableStart="@drawable/ic_gw"
-        android:drawableEnd="@drawable/ic_dahao"
-        android:gravity="center_vertical"
-        android:paddingLeft="20dp"
-        android:text="    购物"
-        app:layout_constraintEnd_toEndOf="@+id/button12"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/button12"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
-
-    <Button
-        android:id="@+id/button12"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="#FBFBFB"
-        android:drawableStart="@drawable/ic_yx"
-        android:drawableEnd="@drawable/ic_dahao"
-        android:gravity="center_vertical"
-        android:paddingLeft="20dp"
-        android:text="    游戏"
-        app:layout_constraintEnd_toEndOf="@+id/button5"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/button5"
-        app:layout_constraintTop_toBottomOf="@+id/button11" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="#FBFBFB"
-        android:drawableStart="@drawable/ic_xcx"
-        android:drawableEnd="@drawable/ic_dahao"
-        android:gravity="center_vertical"
-        android:paddingLeft="20dp"
-        android:text="    小程序"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/guideline16"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button12" />
+        app:layout_constraintTop_toTopOf="@+id/guideline30">
+
+        <Button
+            android:id="@+id/Wechat_Moments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="#FBFBFB"
+            android:drawableStart="@drawable/ic_pyq"
+            android:drawableEnd="@drawable/ic_dahao"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="    朋友圈" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#FBFBFB"
+            android:drawableStart="@drawable/ic_sph"
+            android:drawableEnd="@drawable/ic_dahao"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="    视频号" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FBFBFB"
+            android:drawableStart="@drawable/ic_yaoyiyao"
+            android:drawableEnd="@drawable/ic_dahao"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="    摇一摇" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#FBFBFB"
+            android:drawableStart="@drawable/ic_sys"
+            android:drawableEnd="@drawable/ic_dahao"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="    扫一扫" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#FBFBFB"
+            android:drawableStart="@drawable/ic_kyk"
+            android:drawableEnd="@drawable/ic_dahao"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="    看一看" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FBFBFB"
+            android:drawableStart="@drawable/ic_souyisou"
+            android:drawableEnd="@drawable/ic_dahao"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="    搜一搜" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#FBFBFB"
+            android:drawableStart="@drawable/ic_fjr"
+            android:drawableEnd="@drawable/ic_dahao"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="    附近的人" />
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#FBFBFB"
+            android:drawableStart="@drawable/ic_gw"
+            android:drawableEnd="@drawable/ic_dahao"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="    购物" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FBFBFB"
+            android:drawableStart="@drawable/ic_yx"
+            android:drawableEnd="@drawable/ic_dahao"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="    游戏" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#FBFBFB"
+            android:drawableStart="@drawable/ic_xcx"
+            android:drawableEnd="@drawable/ic_dahao"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="    小程序" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textView7"
@@ -171,12 +141,12 @@
         android:text="发现"
         android:textColor="#070707"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/sousu"
+        app:layout_constraintBottom_toTopOf="@+id/guideline30"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/sousu"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline16"
@@ -189,11 +159,9 @@
         android:id="@+id/imageView13"
         android:layout_width="40dp"
         android:layout_height="30dp"
-        android:layout_marginStart="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline19"
-        app:layout_constraintEnd_toStartOf="@+id/imageView12"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline34"
+        app:layout_constraintStart_toStartOf="@+id/guideline34"
         app:layout_constraintTop_toTopOf="@+id/guideline19"
         app:srcCompat="@drawable/xixi" />
 
@@ -201,33 +169,30 @@
         android:id="@+id/imageView12"
         android:layout_width="40dp"
         android:layout_height="30dp"
-        android:layout_marginEnd="80dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline19"
-        app:layout_constraintEnd_toStartOf="@+id/imageView17"
+        app:layout_constraintEnd_toStartOf="@+id/guideline33"
+        app:layout_constraintStart_toStartOf="@+id/guideline33"
         app:layout_constraintTop_toTopOf="@+id/guideline19"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/toxilu" />
 
     <ImageView
         android:id="@+id/imageView17"
         android:layout_width="40dp"
         android:layout_height="30dp"
-        android:layout_marginEnd="56dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline19"
-        app:layout_constraintEnd_toStartOf="@+id/imageView15"
+        app:layout_constraintEnd_toStartOf="@+id/guideline36"
+        app:layout_constraintStart_toStartOf="@+id/guideline36"
         app:layout_constraintTop_toTopOf="@+id/guideline19"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/fax" />
 
     <ImageView
         android:id="@+id/imageView15"
         android:layout_width="40dp"
         android:layout_height="30dp"
-        android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline19"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline35"
+        app:layout_constraintStart_toStartOf="@+id/guideline35"
         app:layout_constraintTop_toTopOf="@+id/guideline19"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/wowowo" />
 
     <TextView
@@ -279,21 +244,23 @@
         android:id="@+id/sousu"
         android:layout_width="25dp"
         android:layout_height="25dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="12dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView16"
         app:layout_constraintEnd_toStartOf="@+id/imageView16"
-        app:layout_constraintTop_toTopOf="@+id/imageView16"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/sous" />
 
     <ImageView
         android:id="@+id/imageView16"
         android:layout_width="25dp"
         android:layout_height="25dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline30"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/jia" />
 
     <androidx.constraintlayout.widget.Guideline
@@ -302,5 +269,40 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.35279804" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.90997565" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.64720196" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

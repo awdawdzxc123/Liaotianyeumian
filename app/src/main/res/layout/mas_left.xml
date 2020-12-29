@@ -9,12 +9,14 @@
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:orientation="horizontal"
         android:paddingEnd="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/left_cun"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/left_cun">
+        app:layout_constraintStart_toEndOf="@+id/left_cun"
+        app:layout_constraintTop_toTopOf="@+id/left_cun">
 
         <TextView
             android:id="@+id/leftMsg"
@@ -31,9 +33,11 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_7" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,41 +1,37 @@
 package com.example.liaotianyeumian
-
 import android.app.Activity
 import android.content.Intent
 import android.graphics.Color
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
-import kotlinx.android.synthetic.main.activity_find.*
+import android.view.WindowManager.LayoutParams.FLAG_FULLSCREEN
+import androidx.appcompat.app.AppCompatActivity
+import com.example.ninepatchdemo.LoginActivity
+import java.util.*
 
-import kotlinx.android.synthetic.main.activity_weixin.imageView15
 
-class find : AppCompatActivity() {
+class WelcomeActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_find)
+        setContentView(R.layout.activity_welcome)
         supportActionBar?.hide()//标题弃掉
-
         fullScreen(this)
         window.decorView.systemUiVisibility =
             View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN or View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
-        sousu.setOnClickListener {
-            val intent = Intent(this,com.example.liaotianyeumian.Wechat_Moments::class.java)
-            startActivity(intent)
+        //setTheme(R.style.MyTheme)
+        window.setFlags(FLAG_FULLSCREEN,FLAG_FULLSCREEN)
+        var timer = Timer()
+        class MyTimerTask() : TimerTask() {
+            override fun run() {
+                val intent = Intent(this@WelcomeActivity, LoginActivity::class.java)
+                startActivity(intent)
+                finish()
+            }
         }
-        imageView13.setOnClickListener {
-            val intent = Intent(this, WeinxinActivity::class.java)
-            startActivity(intent)
-        }
-        imageView15.setOnClickListener {
-            val intent = Intent(this,my::class.java)
-            startActivity(intent)
-        }
-        imageView12.setOnClickListener {
-            val intent = Intent(this,Tongxilu::class.java)
-            startActivity(intent)
-        }
+        var timeTask = MyTimerTask()
+        timer.schedule(timeTask, 2000)
     }
     /**
      * 通过设置全屏，设置状态栏透明
@@ -57,3 +53,12 @@ class find : AppCompatActivity() {
         }
     }
 }
+
+
+
+
+
+
+
+
+

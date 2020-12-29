@@ -30,7 +30,7 @@ class FruitAdapter(context: Context, private val resource: Int, data: List<Fruit
         val view: View
         if (convertView==null) {
             view = LayoutInflater.from(context).inflate(resourceId, parent, false)
-            val imageView: ImageView = view.findViewById(R.id.imageView)
+            val imageView: ImageView = view.findViewById(R.id.fanhui)
             val textView1: TextView = view.findViewById(R.id.textView1)
             val textView2: TextView = view.findViewById(R.id.textView2)
             val textView3: TextView = view.findViewById(R.id.textView3)
